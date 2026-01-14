@@ -109,7 +109,7 @@ impl Engine {
             }
 
             if live.die.0 == index {
-                println!("liveness: engine: {used} died");
+                println!("liveness engine: {used} died");
             }
 
        }
@@ -126,9 +126,6 @@ fn main() {
         ILoc::Print("A".to_string()),
         ILoc::Print("B".to_string()),
         ILoc::LoadI("C".to_string(), 90),
-
-
-
     ];
 
     engine.run(ins); 
